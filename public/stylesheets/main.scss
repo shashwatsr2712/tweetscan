@@ -1,0 +1,121 @@
+$family1:"Montserrat", Arial, Helvetica, sans-serif;
+$family2:"Courgette", serif;
+$gray:#a9a9a9;
+$red:#FF0000;
+$gradient-color-1:#cda1f1;
+$gradient-color-2:#00acee;
+$gradient-color-3:#ffffff;
+$footer-bg:#262B32;
+$footer-primary:#87ceeb;
+$footer-secondary:#9b9797;
+$footer-hover:#5858e0;
+$temp:#97c4d6;
+
+html,body{
+    font-family:$family1;
+    margin:0;
+}
+
+html,body{
+    height:100%;
+}
+
+// Absolute positioned logo at the top
+#logo{
+    position:absolute;
+    top:15px;
+    left:10px;
+}
+
+// Background
+#bg{
+    // background-image: linear-gradient(to bottom right,$gradient-color-1,$gradient-color-2,$gradient-color-3);
+    background:url('../images/background1.jpg') no-repeat;
+    background-size:cover;
+    min-height:100vh;
+    #heading{
+        background-color:rgba(100,100,100,0.4);
+        padding-top:20vh;
+        font-family:$family2;
+        color:#ffffff;
+        text-align:center;
+        text-shadow:0 4px 3px rgba(0,0,0,.4), 0 8px 13px rgba(0,0,0,.1);
+        // Sub-heading
+        h4{
+            font-family:$family1;
+            color:#ffff00;
+            text-shadow:none;
+        }
+    }
+}
+
+// Form for searching keywords/hashtags
+form#searchHashTag{
+    margin-top:70px;
+    margin-bottom:50px;
+    width:70%;
+}
+
+// Div containing Google chart for searched keyword analysis
+#piechart{
+    margin-bottom:20px;
+    margin-left:10px;
+    margin-right:10px;
+}
+
+// Buttons to load top trends
+#loadWorldTrends,#loadIndiaTrends{
+    margin-bottom: 10px;
+}
+
+// Div containing Google chart for trending keywords' analysis
+#worldTrendsDiv,#indiaTrendsDiv{
+    max-height:90vh;
+    overflow-y:scroll;
+    overflow-x:visible;
+}
+
+// Footer
+footer{
+    background-color:$footer-bg;
+    color: $footer-secondary;
+    a{
+        color:$footer-primary;
+        text-decoration:none;
+    }
+    a:hover{
+        text-decoration:none;
+        color:$footer-hover;
+    }
+    div.row{
+        color:$footer-secondary;
+        padding-top:30px;
+        padding-bottom: 20px;
+        border-bottom: 1px dashed white;
+    }
+    p#bottomBar{
+        /* border-top:2px dashed white; */
+        padding-top:20px;
+        padding-bottom:10px;
+        text-align:center;
+        margin-bottom:0;
+    }
+    i.fab{
+        font-size:30px;
+        padding-right:15px;
+    }
+    #socialIcons{
+        text-align:center;
+    }
+}
+
+// For mobile devices
+@media only screen and (max-width: 576px){
+    #bg #heading{
+        padding-top: 15vh;
+    }
+    // Expand the inline form
+    form#searchHashTag{
+        width:100%;
+    }
+}

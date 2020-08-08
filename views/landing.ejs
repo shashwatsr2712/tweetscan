@@ -1,0 +1,61 @@
+<%- include ("./partials/header") %>
+
+<!-- Hero Image background -->
+<header id="bg">
+    <!-- Top heading -->
+    <div id="heading" class="container">
+        <h1>Welcome to TweetScan!</h1><br>
+        <h4><i>Sentiment analysis of tweets</i></h4><br><br>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div id="searchDiv" class="col">
+                <!-- Form for submitting keywords/hashtags for analysis -->
+                <form id="searchHashTag" class="mx-auto">
+                    <div class="input-group text-center">
+                        <input class="form-control" type="text" id="searchQuery" minlength="2" placeholder="Enter a hashtag or keyword"/>
+                        <div class="input-group-append text-center">
+                            <button class="btn btn-warning" type="submit">Analyze</button>
+                        </div>
+                    </div><br/>
+                    <div class="alert alert-info">This usually takes 2 to 4 minutes...</div>
+                </form>
+
+                <!-- Div where google chart for hashtag/keyword analysis will be placed -->
+                <div id="piechart"></div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<br/>
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <div class="alert alert-warning">The trend analysis usually takes 7 to 8 minutes...</div>
+        </div>
+    </div>
+
+    <br/>
+    <div class="row">
+        <div id="indiaTrendsCol" class="text-center col-12 col-sm-6">
+            <button id="loadIndiaTrends" class="btn btn-info">Load India Trends</button>
+            <!-- Div where google chart for India trends will be placed -->
+            <div id="indiaTrendsDiv">
+            </div>
+        </div>
+        <br/>
+
+        <div id="worldTrendsCol" class="text-center col-12 col-sm-6">
+            <button id="loadWorldTrends" class="btn btn-info">Load World Trends</button>
+            <!-- Div where google chart for global trends will be placed -->
+            <div id="worldTrendsDiv">
+            </div>
+        </div>
+        <br/>
+    </div>
+</div>
+<br/>
+
+<%- include ("./partials/footer") %>

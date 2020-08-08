@@ -1,0 +1,106 @@
+html, body {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+#logo {
+  position: absolute;
+  top: 15px;
+  left: 10px;
+}
+
+#bg {
+  background: url("../images/background1.jpg") no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+#bg #heading {
+  background-color: rgba(100, 100, 100, 0.4);
+  padding-top: 20vh;
+  font-family: "Courgette", serif;
+  color: #ffffff;
+  text-align: center;
+  text-shadow: 0 4px 3px rgba(0, 0, 0, 0.4), 0 8px 13px rgba(0, 0, 0, 0.1);
+}
+
+#bg #heading h4 {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  color: #ffff00;
+  text-shadow: none;
+}
+
+form#searchHashTag {
+  margin-top: 70px;
+  margin-bottom: 50px;
+  width: 70%;
+}
+
+#piechart {
+  margin-bottom: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#loadWorldTrends, #loadIndiaTrends {
+  margin-bottom: 10px;
+}
+
+#worldTrendsDiv, #indiaTrendsDiv {
+  max-height: 90vh;
+  overflow-y: scroll;
+  overflow-x: visible;
+}
+
+footer {
+  background-color: #262B32;
+  color: #9b9797;
+}
+
+footer a {
+  color: #87ceeb;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: none;
+  color: #5858e0;
+}
+
+footer div.row {
+  color: #9b9797;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px dashed white;
+}
+
+footer p#bottomBar {
+  /* border-top:2px dashed white; */
+  padding-top: 20px;
+  padding-bottom: 10px;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+footer i.fab {
+  font-size: 30px;
+  padding-right: 15px;
+}
+
+footer #socialIcons {
+  text-align: center;
+}
+
+@media only screen and (max-width: 576px) {
+  #bg #heading {
+    padding-top: 15vh;
+  }
+  form#searchHashTag {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=main.css.map */
